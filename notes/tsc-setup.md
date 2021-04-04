@@ -24,3 +24,7 @@
 - tsc is a static checking tool for your code
 - js syntax are valid syntax and you can add more typings as you learn more tsc
 - with tsc, you do not need esm to use import statement of es6, tsc handles this well
+
+  > use `tsc --noEmitOnError` for typescript to not emit on error i.e build files will not get updated
+
+  > compile to a specific es version `tsc --target es2015 input.ts`
