@@ -35,3 +35,24 @@ function map<Input, Output>(
 ): Output[] {
   return arr.map(fn);
 }
+
+// as const
+
+const args = [8, 5] as const;
+const angle = Math.atan2(...args);
+
+// generic types
+
+type Objec<Type> = {
+  content: Type | Type[];
+};
+
+let anObj: Objec<string> = {
+  content: "ade",
+};
+
+anObj = {
+  content: ["ade", "yakubu"],
+};
+
+//==========

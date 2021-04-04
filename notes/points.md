@@ -71,12 +71,21 @@ Tsc **narrowing** with **typeguard** is absolutely fascinating on how it tracks 
 - The `Never` Type
 - Exhaustiveness checking
 
-- **Function Overloads** concept is crazily interesting
+- **Function Overloading** concept is crazily interesting
 - The special type object refers to any value that isn’t a primitive (string, number, boolean, symbol, null, or undefined). This is different from the empty object type `{}`, and also different from the global type `Object`. It’s very likely you will never use `Object`.
 - The `unknown` type represents any value. This is similar to the any type, but is safer because it’s not legal to do anything with an `unknown` value:
 - Some functions never return a value:
+
   ```
   function fail(msg: string): never {
     throw new Error(msg);
   }
   ```
+
+- `as const` sometimes come in handy
+- `readonly` is a very awesome way to indicate a constant field in an object
+- `Array<string>` is just a shorthand for `string[]`
+
+  > Hence, arrays are generic
+
+- There is readOnlyArray also `ReadonlyArray<Type>` or `readonly Type[]` which implies the array itself is immutable
