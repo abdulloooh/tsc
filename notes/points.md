@@ -95,3 +95,4 @@ Tsc **narrowing** with **typeguard** is absolutely fascinating on how it tracks 
   > A tuple type is another sort of Array type that knows exactly how many elements it contains, and exactly which types it contains at specific positions.
 
 - Tuples also have readonly
+- Using `import type` as opposed to `import` while importing types allows a non-TypeScript transpiler like Babel, swc or esbuild to know what imports can be safely removed.

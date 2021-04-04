@@ -55,4 +55,45 @@ anObj = {
   content: ["ade", "yakubu"],
 };
 
+// class
+
+class Maths {
+  radius: number;
+  length: number;
+  width: number;
+  constructor(radius: number, length: number, width: number) {
+    this.radius = radius;
+    this.length = length;
+    this.width = width;
+  }
+
+  addition(l: number, w: number) {
+    return l + w;
+  }
+}
+
+const math = new Maths(4, 3, 2);
+const add = math.addition(3, 2);
+console.log(add);
+
+// namespace import
+
+import * as maths from "./start/math";
+
+console.log(maths.pi);
+const positivePhi = maths.absolute(maths.phi);
+
+// types import
+
+import type { Book } from "./start/types";
+
+const book: Book = {
+  available: true,
+  color: "yellow",
+  pages: 10,
+  price: 200,
+};
+
+console.log(book);
+
 //==========
