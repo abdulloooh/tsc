@@ -89,3 +89,9 @@ Tsc **narrowing** with **typeguard** is absolutely fascinating on how it tracks 
   > Hence, arrays are generic
 
 - There is readOnlyArray also `ReadonlyArray<Type>` or `readonly Type[]` which implies the array itself is immutable
+
+- Tuple is kinda weird
+
+  > A tuple type is another sort of Array type that knows exactly how many elements it contains, and exactly which types it contains at specific positions.
+
+- Tuples also have readonly
