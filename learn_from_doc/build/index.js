@@ -74,5 +74,5 @@ const book = {
     pages: 10,
     price: 200,
 };
-console.log(book);
+console.log(book, [1, 23]);
 //==========
