@@ -12,14 +12,14 @@ const app = express_1.default();
 const PORT = enum_1.Config.port;
 // mongoose connection
 mongoose_1.default.Promise = global.Promise;
-mongoose_1.default
-    .connect(enum_1.Config.mongodb, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-})
-    .then(() => console.log("connected to mongodb successfully..."))
-    .catch((err) => console.log(err.message));
+// mongoose
+//   .connect(Config.mongodb!, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useFindAndModify: false,
+//   })
+//   .then(() => console.log("connected to mongodb successfully..."))
+//   .catch((err) => console.log(err.message));
 // bodyparser setup
 app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(body_parser_1.default.json());

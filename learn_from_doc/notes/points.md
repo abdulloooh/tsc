@@ -96,3 +96,4 @@ Tsc **narrowing** with **typeguard** is absolutely fascinating on how it tracks 
 
 - Tuples also have readonly
 - Using `import type` as opposed to `import` while importing types allows a non-TypeScript transpiler like Babel, swc or esbuild to know what imports can be safely removed.
+- `namespaces` are great to organize code but latest better alternatives are `modules` and/or `classes`, use them instead

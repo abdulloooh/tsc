@@ -9,14 +9,14 @@ const PORT = Config.port;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose
-  .connect(Config.mongodb!, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
-  .then(() => console.log("connected to mongodb successfully..."))
-  .catch((err) => console.log(err.message));
+// mongoose
+//   .connect(Config.mongodb!, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useFindAndModify: false,
+//   })
+//   .then(() => console.log("connected to mongodb successfully..."))
+//   .catch((err) => console.log(err.message));
 
 // bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));

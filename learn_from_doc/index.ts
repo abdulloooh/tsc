@@ -29,10 +29,7 @@ function multiplyValue(container: Container, factor: number) {
 
 // array.map(array,callback)
 
-function map<Input, Output>(
-  arr: Input[],
-  fn: (arg: Input) => Output
-): Output[] {
+function map<Input, Output>(arr: Input[], fn: (arg: Input) => Output): Output[] {
   return arr.map(fn);
 }
 
@@ -95,5 +92,13 @@ const book: Book = {
 };
 
 console.log(book, [1, 23]);
+
+// generics
+
+function gereeting<T>(name: T): string {
+  return `hello my friend ${name}`;
+}
+
+console.log(gereeting(10));
 
 //==========
