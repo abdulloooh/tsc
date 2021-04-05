@@ -24,7 +24,7 @@ export const getContacts = (req: any, res: any) => {
 };
 
 export const getContactWithID = (req: any, res: any) => {
-  Contact.findById(req.params.contactId, (err, contact) => {
+  Contact.findById(req.params.contactId, (err: any, contact: any) => {
     if (err) {
       res.send(err);
     }

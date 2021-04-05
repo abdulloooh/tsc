@@ -2,16 +2,15 @@ import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import routes from "./src/routes/crmRoutes";
-
-require("dotenv").config();
+import { Config } from "./enum";
 
 const app = express();
-const PORT = 3000;
+const PORT = Config.port;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
 mongoose
-  .connect(`${process.env.MONGO_URI}`, {
+  .connect(Config.mongodb!, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
